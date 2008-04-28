@@ -64,7 +64,7 @@ BuildRequires:  asm >= 0:1.5.3
 BuildRequires:  bsf
 BuildRequires:  asm-javadoc
 BuildRequires:  bsf-javadoc
-#BuildRequires: java-javadoc
+BuildRequires:  java-rpmbuild
 BuildRequires:  jpackage-utils >= 0:1.7.2
 #BuildRequires:  libreadline-java
 Group:          Development/Java
