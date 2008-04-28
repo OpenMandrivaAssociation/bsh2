@@ -159,7 +159,7 @@ popd
 # remove internal asm code, use JPackage external jar instead
 %__rm -rf src/bsh/org
 %__perl -p -i -e 's|bsh.org.objectweb.asm|org.objectweb.asm|' src/bsh/ClassGeneratorUtil.java
-
+export CLASSPATH=$(build-classpath ant-launcher)
 %ant -Dasm.javadoc=%{_javadocdir}/asm \
      -Dbsf.javadoc=%{_javadocdir}/bsf \
      -Djava.javadoc=%{_javadocdir}/java \
