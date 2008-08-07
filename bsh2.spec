@@ -37,7 +37,7 @@
 
 Name:           bsh2
 Version:        2.0
-Release:        %mkrel 0.b4.2.0.1
+Release:        %mkrel 2.b4.2.0.1
 Epoch:          0
 Summary:        Lightweight Scripting for Java
 License:        LGPL
