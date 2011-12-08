@@ -240,7 +240,7 @@ find %{buildroot}%{_datadir}/%{name} -type f ! -name "*.bsh" \
 # bshservlet
 %__mkdir_p %{buildroot}%{_datadir}/%{name}/bshservlet
 (cd %{buildroot}%{_datadir}/%{name}/bshservlet
-jar xf $RPM_BUILD_DIR/%{Name}-%{fversion}/dist/bshservlet.war
+jar xf %{_builddir}/%{Name}-%{fversion}/dist/bshservlet.war
 )
 
 # scripts
@@ -304,7 +304,7 @@ export CLASSPATH=$(build-classpath gnu-crypto)
 
 %clean
 %__rm -rf %{buildroot}
-%__rm -rf $RPM_BUILD_DIR/META-INF
+%__rm -rf %{_builddir}/META-INF
 
 %post
 %update_maven_depmap
