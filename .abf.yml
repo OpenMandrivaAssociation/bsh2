@@ -1,0 +1,10 @@
+sources:
+  "beanshell-2.0b4.pom:"	58fd54aa22e2aaff19823b15a06c44e0f3b93129
+  "bsh-2.0b4-src.jar:"	69b36df249654a04e777ab899046c50b8cc844ac
+  "bsh-bsf-2.0b4.pom:"	7194a6f2467dbd65fbd1d74dd593bb6ba6ae646f
+  "bsh-classgen-2.0b4.pom:"	83a2ddfc39a9ab2bebcfea6d389fdb522a0e160b
+  "bsh-classpath-2.0b4.pom:"	bf7eb0fbde258db41fa15cbebac0b1a23a6d1ef8
+  "bsh-commands-2.0b4.pom:"	11a0a400f5052b3274cfda8d8f2a067bd4433583
+  "bsh-core-2.0b4.pom:"	c4169fc2b79b7d8b13826dfe394caf7944b7d082
+  "bsh-reflect-2.0b4.pom:"	64457d0c7cafc5c01467a67914154403fb44850b
+  "bsh-util-2.0b4.pom:"	cbf494c5da0c2348f86d865266342d5bdfeed1f2

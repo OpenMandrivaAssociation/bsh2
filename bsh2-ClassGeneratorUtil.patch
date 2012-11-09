@@ -1,0 +1,11 @@
+--- src/bsh/ClassGeneratorUtil.java.sav	2005-03-15 15:07:34.139001664 +0100
++++ src/bsh/ClassGeneratorUtil.java	2005-03-15 15:08:01.199887784 +0100
+@@ -188,7 +188,7 @@
+ 
+ 		String sourceFile = "BeanShell Generated via ASM (www.objectweb.org)";
+ 		ClassWriter cw = new ClassWriter(false);
+-		cw.visit( classMods, fqClassName, superClassName, 
++		cw.visit( 0x30, classMods, fqClassName, superClassName, 
+ 			interfaceNames, sourceFile );
+ 
+ 		if ( !isInterface )

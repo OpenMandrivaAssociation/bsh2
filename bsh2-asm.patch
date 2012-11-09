@@ -1,0 +1,38 @@
+--- BeanShell/src/bsh/ClassGeneratorUtil.java~	2004-01-23 15:27:23.000000000 -0500
++++ BeanShell/src/bsh/ClassGeneratorUtil.java	2004-01-23 15:30:17.000000000 -0500
+@@ -297,7 +297,7 @@
+ 	static void generateField( 
+ 		String fieldName, String type, int modifiers, ClassWriter cw ) 
+ 	{
+-		cw.visitField( modifiers, fieldName, type, null/*value*/ );
++		cw.visitField( modifiers, fieldName, type, null, null );
+ 	}
+ 	
+ 	/**
+@@ -321,7 +321,7 @@
+ 
+ 		// Generate method body
+ 		CodeVisitor cv = cw.visitMethod( 
+-			modifiers, methodName, methodDescriptor, exceptions );
++			modifiers, methodName, methodDescriptor, exceptions, null );
+ 
+ 		if ( (modifiers & ACC_ABSTRACT) != 0 )
+ 			return;
+@@ -399,7 +399,7 @@
+ 
+ 		// Create this constructor method
+ 		CodeVisitor cv = 
+-			cw.visitMethod( modifiers, "<init>", methodDescriptor, exceptions );
++			cw.visitMethod( modifiers, "<init>", methodDescriptor, exceptions, null );
+ 
+ 		// Generate code to push arguments as an object array
+ 		generateParameterReifierCode( paramTypes, false/*isStatic*/, cv );
+@@ -601,7 +601,7 @@
+ 
+ 		// Add method body
+ 		CodeVisitor cv = cw.visitMethod( 
+-			modifiers, "_bshSuper"+methodName, methodDescriptor, exceptions );
++			modifiers, "_bshSuper"+methodName, methodDescriptor, exceptions, null );
+ 
+ 		cv.visitVarInsn(ALOAD, 0);
+ 		// Push vars
