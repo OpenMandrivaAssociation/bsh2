@@ -41,7 +41,7 @@ Release:        %mkrel 2.b4.2.0.2
 Epoch:          0
 Summary:        Lightweight Scripting for Java
 License:        LGPL
-Url:            http://www.beanshell.org/
+Url:            https://www.beanshell.org/
 Source0:        http://www.beanshell.org/bsh-2.0b4-src.jar
 Source1:        beanshell-2.0b4.pom
 Source2:        bsh-classpath-2.0b4.pom
